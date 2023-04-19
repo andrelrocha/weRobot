@@ -6,7 +6,7 @@ We Robot is a fictional robot enterprise that aims to provide innovative and adv
 
 This project is an institutional website developed using best practices, aiming to create intuitive, responsive, and easy-to-access pages.
 
-##Features
+## Features
 ```
 The website is currently under development 
 ```
