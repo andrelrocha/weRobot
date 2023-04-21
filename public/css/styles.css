@@ -7,10 +7,10 @@
 }
 
 :root {
-    --corPrincipal: #598B2C;
-    --corSecundaria: #3C5A14;
     --corTexto: #0F0F0F;
     --corTextoSecundaria:  #11270B;
+    --corPrincipal: #598B2C;
+    --corSecundaria: #3C5A14;
     --corSombra: #DDFFBB;
     --corDestaques: #D3EFBD;
     --corRealce: #FEFAE0;
@@ -28,10 +28,4 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.25;
-}
-
-@media (max-width: 1020px) {
-    body {
-        font-size: 80%;
-    }
 }

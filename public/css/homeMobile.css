@@ -1,0 +1,80 @@
+.containerMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    /*centralizando conteúdo*/
+    width: 50rem;
+    flex: 1;
+    margin: auto;
+}
+
+.welcomeMessage, .homeTitle {
+    font-family: var(--fonteTitulo);
+}
+
+.welcomeMessage {
+    color: var(--corPrincipal);
+    font-weight: 700;
+    margin-top: 3rem;
+    font-size: 120%;
+}
+
+.homeTitle {
+    line-height: 1.6;
+    margin: 4rem 0;
+}
+
+.homeText {
+    line-height: 1.8;
+    color: var(--corTextoSecundaria);
+    font-size: 115%;
+    width: 90%;
+}
+
+.primaryButton {
+    width: 35%;
+    height: 5rem;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 3rem;
+
+    background: #3CDC8C;
+    color: var(--corRealce);
+    
+    font-family: var(--fontePrincipal);
+    font-size: 1.4rem;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background color 200ms;
+}
+
+.primaryButton:hover {
+    background: #36CF82;
+    transform: scale(1.02);
+    transition: transform 200ms;
+}
+
+.primaryButton img {
+    margin-right: 1.6rem;
+}
+
+.homeImages {
+    /*img está estourando as laterais e saindo do container pai*/
+}
+
+.homeNumbers {
+    color: var(--corSecundaria);
+    margin: 0.5rem 0;
+}
+
+.homeNumbersText {
+    color: var(--corPrincipal);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
