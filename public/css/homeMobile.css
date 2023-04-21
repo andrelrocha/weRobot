@@ -25,6 +25,7 @@
 .homeTitle {
     line-height: 1.6;
     margin: 4rem 0;
+    color: var(--corTextoSecundaria);
 }
 
 .homeText {
@@ -64,13 +65,10 @@
     margin-right: 1.6rem;
 }
 
-.homeImages {
-    /*img está estourando as laterais e saindo do container pai*/
-}
-
 .homeNumbers {
     color: var(--corSecundaria);
     margin: 0.5rem 0;
+    font-weight: 800;
 }
 
 .homeNumbersText {
