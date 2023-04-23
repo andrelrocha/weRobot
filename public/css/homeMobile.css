@@ -21,7 +21,6 @@
     position: fixed;
     top: 0;
     background: var(--corRealce);
-    width: 100vw;
     padding: 4rem;
 }
 
