@@ -17,22 +17,143 @@
     transform: translateX(-50%);
 }
 
-.scroll {
-    position: fixed;
-    top: 0;
-    background: var(--corRealce);
-    padding: 4rem;
-}
-
 .logo {
     width: 40%;
     height: auto;
+    position: absolute;
+    top: 3rem;
+    left: 20;
+    z-index: 5;
 }
 
-.barra {
-    width: 150%;
-    height: auto;
+.openMenu {
+    position: absolute;
+    top: 2.6rem;
+    right: 1.5rem;
 }
+
+.openMenu img {
+    width: 120%;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*classes utilizadas com js*/
+
+.scroll {
+    position: fixed;
+    top: 0;
+    background: var(--corPrincipal);
+    padding: 4rem;
+}
+
+.menu, 
+.closeMenu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menuExpanded {
+    overflow: hidden;
+}
+
+/*seleciona todos os elementos filhos diretos de 'menuExpanded', exceto o elemento com #navigation*/
+.menuExpanded > *:not(#navigation) {
+    display: none;
+}
+
+.menuExpanded .menu, 
+.menuExpanded .closeMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuExpanded .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--corPrincipal);
+
+    width: 100vw;
+    height: 100vh;
+
+    padding-top: 6rem;
+}
+
+.menuExpanded #navigation {
+    position: relative;
+}
+
+.menuExpanded .homeLinks {
+    width: 100vw;
+}
+
+.listaLinks {
+    margin-top: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.listaLinks a {
+    color: var(--corDestaques);
+    text-decoration: none;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuExpanded .logo,
+.closeMenu {
+    position: relative;
+    z-index: 10;
+    top: auto;
+    left: auto;
+}
+
+.menuPrimaryButton {
+    width: 50%;
+    height: 3.5rem;
+    margin: 4rem auto 3rem auto;
+    border: none;
+    border-radius: 3rem;
+
+    background: var(--corDestaques);
+    color: var(--corSecundaria);
+    
+    font-family: var(--fontePrincipal);
+    font-size: 70%;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background color 200ms;
+}
+
+.menuPrimaryButton:hover {
+    background: var(--corSecundaria);
+    color: var(--corDestaques);
+    transform: scale(1.02);
+    transition: transform 200ms;
+}
+
+/*main content*/
 
 .containerMobile {
     display: flex;
@@ -47,7 +168,8 @@
     margin: 10rem auto;
 }
 
-.welcomeMessage, .homeTitle {
+.welcomeMessage, 
+.homeTitle {
     font-family: var(--fonteTitulo);
 }
 
@@ -88,7 +210,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background color 200ms;
+    transition: background 200ms;
 }
 
 .primaryButton:hover {

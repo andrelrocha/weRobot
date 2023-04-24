@@ -9,57 +9,52 @@
     <link rel="stylesheet" href="./public/css/homeMobile.css">
 </head>
 
-<body>
-    <header>
-        <nav id="navigation" class="">
-            <div class="homeLinks">
-                <img class="logo" src="./public/images/home.png" alt="">
+<body class="">
+    <nav id="navigation" class="">
+        <div class="homeLinks">
+            <img class="logo" src="./public/images/home.svg" alt="logo we robot">
 
-                <div class="menu">
-                    <ul>
-                        <li><a onclick="closeMenu()" href="#home">Home</a></li>
-                        <li><a onclick="closeMenu()" href="#services">Services</a></li>
-                        <li><a onclick="closeMenu()" href="#about">About</a></li>
-                    </ul>
+            <button class="openMenu" onclick="openMenu()"
+            aria-expanded="false"
+            aria-label="Open menu">
+                <img class="menuBar" src="./public/images/barra.svg" alt="menu bar">
+            </button>
 
-                    <a class="primaryButton">
-                        Contact us
-                    </a>
+            <button class="closeMenu" onclick="closeMenu()"
+            aria-expanded="false"
+            aria-label="Close menu">
+                <img src="./public/images/fecha.svg" alt="close page">
+            </button>
+
+            <div class="menu">
+                <ul class="listaLinks">
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Services</a></li>
+                    <li><a onclick="closeMenu()" href="#about">About</a></li>
+                </ul>
+
+                <a class="menuPrimaryButton">
+                    Contact us
+                </a>
         
-                    <ul class="social-links">
-                        <li>
-                            <a href="facebook.com.br" target="_blank">
-                                <img src="./public/images/facebook.svg" alt="facebook logo"></a>
-                        </li>
-        
-                        <li>
-                            <a href="Instagram.com.br" target="_blank">
-                                <img src="./public/images/instagram.svg" alt="instagram logo"></a>
-                        </li>
-        
-                        <li>
-                            <a href="youtube.com.br" target="_blank">
-                                <img src="./public/images/youtube.svg" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <button class="openMenu"
-                aria-expanded="false"
-                aria-label="Open menu"
-                onclick="openMenu()">
-                    <img class="barra" src="./public/images/barra.svg" alt="menu bar">
-                </button>
-
-                <button class="closeMenu">
-                    <img src="./public/images/fecha.svg" alt="close page">
-                </button>
-
+                <ul class="socialLinks">
+                    <li>
+                        <a href="https://facebook.com/" target="_blank">
+                            <img src="./public/images/facebook.svg" alt="facebook logo"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./public/images/instagram.svg" alt="instagram logo"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="./public/images/youtube.svg" alt="youtube logo"></a>
+                    </li>
+                </ul>
             </div>
-        </nav>
 
-
-    </header>
+        </div>
+    </nav>
 
     <main class="containerMobile">
         <h2 class="welcomeMessage">Welcome to We Robot</h4>
