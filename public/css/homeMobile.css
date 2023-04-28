@@ -91,6 +91,10 @@ nav button {
     transform: translateY(100%);
 }
 
+#navigation {
+    z-index: 1000;
+}
+
 .menuExpanded #navigation {
     position: relative;
 }
@@ -126,7 +130,7 @@ nav button {
 .menuExpanded .logo,
 .closeMenu {
     position: relative;
-    z-index: 10;
+    z-index: 900;
     top: auto;
     left: auto;
 }
