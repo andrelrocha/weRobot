@@ -82,6 +82,13 @@ nav button {
     height: 100vh;
 
     padding-top: 6rem;
+
+    transition: transform 300ms;
+    transform: translateY(0);
+}
+
+.menu {
+    transform: translateY(100%);
 }
 
 .menuExpanded #navigation {
@@ -232,11 +239,10 @@ nav button {
 .stats {
     font-size: 125%;
     background-color: var(--corSombra);
-    padding: 2rem;
+    padding: 2rem 4rem;
     border-radius: 6rem;
     /*valor cor box-shadow var(--corTextoSecundaria) em rgb*/
     box-shadow: 0 0 10px rgba(17, 39, 11, 0.3);
-    margin-bottom: 2rem;
 }
 
 .homeNumbers {

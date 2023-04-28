@@ -1,0 +1,43 @@
+section {
+    padding-block: 6rem;
+}
+
+#services header {
+    margin-top: 4rem;
+}
+
+#services header h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: var(--corSecundaria);
+    margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+    color: var(--corTextoSecundaria);
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 6rem;
+}
+
+#services h3 {
+    color: var(--corTextoSecundaria);
+}
+
+.card {
+    text-align: left;
+    background: var(--corRealce);
+    padding: 2rem;
+    border: 1px solid var(--corSombra);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+}
+
+.card h3 {
+    margin: 1.5rem auto;
+}
