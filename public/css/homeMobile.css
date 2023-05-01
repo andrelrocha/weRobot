@@ -155,12 +155,10 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background color 200ms;
 }
 
 .menuPrimaryButton:hover {
-    background: var(--corSecundaria);
-    color: var(--corDestaques);
+    filter: brightness(1.2);
     transform: scale(1.02);
     transition: transform 200ms;
 }
@@ -303,9 +301,13 @@ footer li img {
 
     opacity: 0;
     visibility: hidden;
+
+    transform: translateY(100%);
+    transition: 200ms;
 }
 
 #backToStart.show {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
 }
