@@ -61,6 +61,10 @@ nav button {
     overflow: hidden;
 }
 
+#navigation {
+    z-index: 100;
+}
+
 /*seleciona todos os elementos filhos diretos de 'menuExpanded', exceto o elemento com #navigation*/
 .menuExpanded > *:not(#navigation) {
     display: none;

@@ -23,13 +23,13 @@ window.addEventListener('scroll', scrollMenu);
 
 function openMenu (event) {
     document.body.classList.add('menuExpanded');
-    logo.src = './public/images/homeAlternativo.svg';
+    homeNav.style.width = window.innerWidth + "px";
 }
 
 function closeMenu (event) {
     document.body.classList.remove('menuExpanded');
-    logo.src = './public/images/home.svg';
 }
+
 
 
 //cria objetos a serem passados como parametro para html evitando repetição
