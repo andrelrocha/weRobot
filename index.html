@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./public/css/homeMobile.css">
     <link rel="stylesheet" href="./public/css/services.css">
     <link rel="stylesheet" href="./public/css/about.css">
+    <link rel="stylesheet" href="./public/css/contact.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                     <li><a onclick="closeMenu()" href="#about">About</a></li>
                 </ul>
 
-                <a class="menuPrimaryButton">
+                <a class="menuPrimaryButton" onclick="closeMenu()" href="#contact">
                     Contact us
                 </a>
         
@@ -68,7 +69,7 @@
         
             <p class="homeText">At We Robot, we believe that cutting-edge robotics is the future of industry. That's why we're dedicated to providing our clients with the most advanced and innovative robotic solutions on the market.</p>
         
-            <a class="primaryButton" type="button">
+            <a href="#contact" class="primaryButton" type="button">
                 <img src="./public/images/whatsapp.svg" alt="Whatsapp">
                 Contact us
             </a>
@@ -117,11 +118,107 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facilis cumque, ea ipsam asperiores nobis vero, odio recusandae iste autem, quasi animi laudantium. Omnis laudantium aperiam hic magnam qui nam?
                 </p>
 
-                <img src="./public/images/robotAbout.svg" alt="Robot and human hands reaching for each other">
+                <img src="./public/images/robotAbout.svg" alt="">
             </div>
         </section>
     </div>
 
+    <div class="containerMobile">
+        <section id="contact">
+            <header>
+                <h2>Contact Us!</h2>
+            </header>
+
+            <div class="content">
+                <ul>
+                    <li>
+                        <img src="./public/images/markerContact.svg">
+                        Av. Generique, 1313
+                    </li>
+                    <li>
+                        <img src="./public/images/mailContact.svg">
+                        contact@werobot.io
+                    </li>
+                </ul>
+
+                <a class="button"
+                href="https://wa.me/5585987654321"
+                target="_blank"> <img src="./public/images/whatsapp.svg">
+                Schedule a meeting</a>
+
+                <img src="./public/images/robotContact.png" alt="">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="containerMobile">
+            <div class="footerDiv">
+
+                <img src="./public/images/homeAlternativo.png" alt="our logo">
+                
+                <p>
+                    ©2023 We Robot <br>
+                    Todos os direitos reservados.
+                </p>
+                
+                <ul class="socialLinks">
+                    <li>
+                        <a href="https://facebook.com/" target="_blank">
+                            <img src="./public/images/facebook.svg" alt="facebook logo"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./public/images/instagram.svg" alt="instagram logo"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <img src="./public/images/youtube.svg" alt="youtube logo"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    </footer>
+
+    <a id="backToStart" class="" href="/">
+        <img src="./public/images/backToStart.svg" alt="arrow for coming back to the begging of the page">
+    </a>
+
+    <footer>
+        <div class="containerMobile">
+            <div class="footerDiv">
+
+                <img src="./public/images/homeAlternativo.png" alt="our logo">
+                
+                <p>
+                    ©2023 We Robot <br>
+                    Todos os direitos reservados.
+                </p>
+                
+                <ul class="socialLinks">
+                    <li>
+                        <a href="https://facebook.com/" target="_blank">
+                            <img src="./public/images/facebook.svg" alt="facebook logo"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="./public/images/instagram.svg" alt="instagram logo"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <img src="./public/images/youtube.svg" alt="youtube logo"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    </footer>
+
+    <a id="backToStart" class="" href="/">
+        <img src="./public/images/backToStart.svg" alt="arrow for coming back to the begging of the page">
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./public/script/scroll.js"></script>
     <script src="./public/script/mobile.js"></script>
 </body>
 </html>

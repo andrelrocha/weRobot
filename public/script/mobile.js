@@ -1,9 +1,14 @@
 const logo = document.querySelector('.logo');
 const menuBar = document.querySelector('.menuBar')
+const homeNav = document.querySelector('#navigation');
+const backToStart = document.querySelector('#backToStart')
 
-function scrollMenu (event) {
-    const homeNav = document.querySelector('#navigation');
-    
+function onScroll () {
+  showNavOnScroll();
+  showBackToStart();
+}
+
+function showNavOnScroll (event) {
     if (scrollY > 0) {
         homeNav.classList.add('scroll');
         // define width como o tamanho atual da janela de exibição, garantindo que ele tenha uma largura fixa independente do tamanho da tela.
@@ -17,8 +22,15 @@ function scrollMenu (event) {
     }
 }
 
-window.addEventListener('scroll', scrollMenu);
+function showBackToStart (event) {
+  if (scrollY > 600) {
+    backToStart.classList.add('show');
+} else {
+    backToStart.classList.remove('show');
+}
+}
 
+window.addEventListener('scroll', onScroll);
 
 function openMenu (event) {
     document.body.classList.add('menuExpanded');
