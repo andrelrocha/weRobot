@@ -32,10 +32,30 @@ body {
     overflow: overlay;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul {
     list-style: none;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+section header h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: var(--corSecundaria);
+    margin-bottom: 1.6rem;
+}
+
+section header h2 {
+    color: var(--corTextoSecundaria);
+    font-size: 2rem;
+    line-height: 1.5;
 }
