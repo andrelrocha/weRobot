@@ -1,0 +1,17 @@
+#about {
+    background: var(--corRealce);
+}
+
+#about header {
+    margin-top: 4rem;
+}
+
+#about header h2 {
+    margin-bottom: 3rem;
+}
+
+#about .content p {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    line-height: 1.8;
+}
