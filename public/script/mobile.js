@@ -20,10 +20,8 @@ function scrollMenu (event) {
 window.addEventListener('scroll', scrollMenu);
 
 
-
 function openMenu (event) {
     document.body.classList.add('menuExpanded');
-    homeNav.style.width = window.innerWidth + "px";
 }
 
 function closeMenu (event) {
