@@ -1,0 +1,49 @@
+#contact {
+    text-align: left;
+}
+
+#contact header {
+    margin-top: 5rem;
+    margin-bottom: 1.6rem;
+}
+
+#contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+#contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.button {
+    height: 5rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 3rem;
+
+    background: var(--corPrincipal);
+    color: var(--corRealce);
+    
+    font-family: var(--fontePrincipal);
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    transition: background color 200ms;
+}
+
+.button:hover {
+    background: var(--corSecundaria);
+    color: var(--corDestaques);
+    transition: transform 200ms;
+}   
