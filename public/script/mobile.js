@@ -47,6 +47,14 @@ const cardsData = [
     {
         title: "Construction",
       //description: lorem
+    },
+    {
+        title: "Retail",
+      //description: lorem
+    },
+    {
+        title: "Sports",
+      //description: lorem 
     }
   ];
 

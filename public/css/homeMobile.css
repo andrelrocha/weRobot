@@ -91,14 +91,6 @@ nav button {
     transform: translateY(100%);
 }
 
-#navigation {
-    z-index: 1000;
-}
-
-.menuExpanded #navigation {
-    position: relative;
-}
-
 .menuExpanded .homeLinks {
     width: 100vw;
 }
@@ -127,8 +119,11 @@ nav button {
     align-items: center;
 }
 
-.menuExpanded .logo,
-.closeMenu {
+.menuExpanded .logo {
+    opacity: 0;
+}
+
+.menuExpanded .closeMenu {
     position: relative;
     z-index: 900;
     top: auto;
