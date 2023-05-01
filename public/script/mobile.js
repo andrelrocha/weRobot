@@ -20,16 +20,14 @@ function scrollMenu (event) {
 window.addEventListener('scroll', scrollMenu);
 
 
-
 function openMenu (event) {
     document.body.classList.add('menuExpanded');
-    logo.src = './public/images/homeAlternativo.svg';
 }
 
 function closeMenu (event) {
     document.body.classList.remove('menuExpanded');
-    logo.src = './public/images/home.svg';
 }
+
 
 
 //cria objetos a serem passados como parametro para html evitando repetição
