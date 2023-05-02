@@ -49,7 +49,7 @@ nav button {
     position: fixed;
     top: 0;
     background: var(--corPrincipal);
-    padding: 4rem;
+    padding: 3.5rem;
 }
 
 .menu, 
@@ -117,6 +117,10 @@ nav button {
     text-decoration: none;
 }
 
+.menuExpanded .homeLinks .menu .listaLinks a {
+    color: var(--corRealce) !important;
+}
+
 .socialLinks {
     display: flex;
     gap: 1.5rem;
@@ -175,8 +179,10 @@ nav button {
     /*centralizando conteúdo*/
     width: 50rem;
     flex: 1;
-    margin: 10rem auto;
+    margin: 10rem auto 0;
 }
+
+
 
 .welcomeMessage, 
 .homeTitle {
