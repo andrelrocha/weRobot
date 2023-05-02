@@ -42,6 +42,7 @@ function closeMenu (event) {
 
 
 
+
 //cria objetos a serem passados como parametro para html evitando repetição
 const image = "./public/images/check.svg";
 const lorem = "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.";
