@@ -1,13 +1,12 @@
 #about {
     background: var(--corRealce);
-}
-
-#about header {
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #about header h2 {
     margin-bottom: 3rem;
+    font-family: var(--fonteTitulo);
 }
 
 #about .content p {

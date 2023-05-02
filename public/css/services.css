@@ -1,9 +1,6 @@
-#services header {
-    margin-top: 4rem;
-}
-
 #services header h2 {
     margin-bottom: 6rem;
+    font-family: var(--fonteTitulo);
 }
 
 #services h3 {
