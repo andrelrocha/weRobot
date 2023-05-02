@@ -1,0 +1,66 @@
+/*garantindo responsividade para o footer sem quebrar o layout*/
+@media (min-width: 790px) {
+    footer {
+        width: 100vw;
+    }
+
+    .footerDiv {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    /*reset*/
+    nav#navigation .homeLinks * {
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+        background: initial;
+        width: initial;
+        height: initial;
+    }
+
+    nav#navigation .closeMenu,
+    nav#navigation .openMenu,
+    nav#navigation .socialLinks {
+        display: none;
+    }
+
+    nav#navigation .anchorLogo {
+        width: 30%;
+    }
+
+    nav#navigation .logo {
+        width: 75%;
+    }
+
+    nav#navigation .homeLinks {
+        height: 8rem;
+        width: 100vw;
+    }
+
+    nav#navigation .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+    } 
+
+    nav#navigation .menuPrimaryButton {
+        margin-right: 3rem;
+    }
+    
+    .containerMobile, .homeLinks {
+        width: min(1120px, 100%);
+    }
+
+}

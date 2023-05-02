@@ -262,16 +262,12 @@ nav button {
 
 footer {
     background-color: var(--corPrincipal);
-}
-
-footer .containerMobile {
     margin: 0;
 
     padding-block: 3rem;
     
     text-align: left;
     color: var(--corRealce);
-
 }
 
 .footerDiv {
