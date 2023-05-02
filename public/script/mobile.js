@@ -1,7 +1,8 @@
 const logo = document.querySelector('.logo');
 const menuBar = document.querySelector('.menuBar')
 const homeNav = document.querySelector('#navigation');
-const backToStart = document.querySelector('#backToStart')
+const backToStart = document.querySelector('#backToStart');
+const menuNotebook = document.querySelectorAll('nav#navigation .menu li a');
 
 function onScroll () {
   showNavOnScroll();
@@ -14,11 +15,17 @@ function showNavOnScroll (event) {
         // define width como o tamanho atual da janela de exibição, garantindo que ele tenha uma largura fixa independente do tamanho da tela.
         homeNav.style.width = window.innerWidth + "px";
         logo.src = './public/images/homeAlternativo.svg';
-        menuBar.src = './public/images/barraAlternativa.svg'
+        menuBar.src = './public/images/barraAlternativa.svg';
+        menuNotebook.forEach (a => {
+          a.style.color = 'var(--corRealce)'; 
+        })
     } else {
         homeNav.classList.remove('scroll');
         logo.src = './public/images/home.svg';
-        menuBar.src = './public/images/barra.svg'
+        menuBar.src = './public/images/barra.svg';
+        menuNotebook.forEach (a => {
+          a.style.color = 'var(--corPrincipal)'; 
+        })
     }
 }
 

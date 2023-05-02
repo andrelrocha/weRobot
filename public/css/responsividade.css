@@ -11,6 +11,10 @@
 
 @media (min-width: 1000px) {
 
+    section {
+        padding-block: 6rem;
+    }
+
     /*reset*/
     nav#navigation .homeLinks * {
         margin: 0;
@@ -56,11 +60,74 @@
     } 
 
     nav#navigation .menuPrimaryButton {
-        margin-right: 3rem;
+        margin-right: 4rem;
     }
     
     .containerMobile, .homeLinks {
         width: min(1120px, 100%);
+    }
+
+
+    /*:nth-child(1) é um seletor de pseudo-classe que seleciona o primeiro elemento filho de um elemento pai*/
+    nav#navigation .menu ul:nth-child(1) {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    nav#navigation .menu li a {
+        color: var(--corPrincipal);
+        font-size: 120%;
+        font-family: var(--fonteTitulo);
+        opacity: 0.8;
+
+        transition: opacity 300ms;
+    }
+    
+    nav#navigation .menu li a:hover {
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    /*adicionar conteúdo extra após um elemento, sem precisar alterar o HTML*/
+    nav#navigation .menu li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: var(--corPrincipal);
+
+        position: relative;
+        bottom: -0.8rem;
+        left: -0.5rem;
+
+        transition: width 200ms;
+    }
+
+    nav#navigation .menu li a:hover::after {
+        width: 100%;
+        padding-inline: 0.5rem;
+    }
+
+    nav#navigation.scroll .menu li a::after {
+        background: var(--corDestaques);
+    }
+
+    nav#navigation .menu .menuPrimaryButton {
+        padding: 0.8rem 1.2rem;
+        border: 2px solid var(--corPrincipal);
+        border-radius: 3rem;
+    
+        background: var(--corDestaques);
+        color: var(--corPrincipal);
+    
+        font-family: var(--fontePrincipal);
+        font-weight: 600;
+        text-transform: uppercase;
+
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
