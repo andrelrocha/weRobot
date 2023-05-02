@@ -9,10 +9,18 @@
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 
     section {
-        padding-block: 6rem;
+        padding-block: 8rem;
+    }
+
+    .col-a {
+        grid-area: A;
+    }
+
+    .col-b {
+        grid-area: B;
     }
 
     /*reset*/
@@ -83,6 +91,7 @@
         transition: opacity 300ms;
     }
     
+    nav#navigation .menu li a.active,
     nav#navigation .menu li a:hover {
         opacity: 1;
         font-weight: 600;
@@ -103,6 +112,7 @@
         transition: width 200ms;
     }
 
+    nav#navigation .menu li a.active::after,
     nav#navigation .menu li a:hover::after {
         width: 100%;
         padding-inline: 0.5rem;
@@ -130,4 +140,94 @@
         justify-content: center;
     }
 
+    .containerMobile #home {
+        display: grid;
+        grid-template-columns: 60rem 1fr;
+        grid-template-areas: 
+        'A B'
+        'C C';
+
+        width: 140%;
+    }
+
+    .containerMobile #home .homeImage {
+        height: 95%;
+        width: 95%;
+    }
+
+    #home .col-a {
+        text-align: left;
+        align-self: center;
+    }
+
+    #home .col-a .contentHome {
+        display: block;
+        text-align: left;
+    }
+
+    #home .stats {
+        margin-top: 6rem;
+        grid-area: C;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 6rem;
+    }
+
+    /*seleciona .stat irmãos adjacentes entre si*/
+    #home .stats .stat + .stat {
+        border-left: 1px solid var(--corPrincipal);
+    }
+
+    #home .stat {
+        flex: 1;
+    }
+
+    #contact header h2 {
+        margin-top: 2rem
+    }
+
+    #about {
+        width: 100vw;
+    }
+
+    
+    #services h2,
+    #about h2,
+    #contact h2 {
+        font-size: 200%;
+    }
+    
+    #services h2 {
+        width: 40rem;
+        margin-inline: auto;
+    }
+
+    #services .cards-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    #services .card {
+        width: 30%;
+        margin: 0;
+        flex-grow: 1;
+    }
+    
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'B A';
+        
+        padding-bottom: 14rem;
+    }
+
+    #about .col-a {
+        align-self: center;
+    }
+    
+    #about .content p {
+        margin: 0 8rem;
+    }
 }

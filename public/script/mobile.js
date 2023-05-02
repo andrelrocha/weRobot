@@ -72,6 +72,10 @@ const cardsData = [
     {
         title: "Sports",
       //description: lorem 
+    },
+    {
+        title: "Games",
+      //description:lorem
     }
   ];
 
