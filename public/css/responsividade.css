@@ -230,4 +230,24 @@
     #about .content p {
         margin: 0 8rem;
     }
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'A B';
+        gap: 12rem;
+        padding-bottom: 0;
+    }
+
+    #contact .col-a {
+        align-self: center;
+    }
+
+    .footerDiv {
+        margin-left: 7rem;
+    }
+
+    .footerDiv .logoFooter {
+        width: 30%;
+    }
 }
