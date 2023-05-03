@@ -39,7 +39,7 @@ function activateCurrentSectionMenu(section) {
 //redireciona o botao home para o início da page sem quebrar o href necessário para activateCurrentSectionMenu
 const homeLink = document.querySelector('.listaLinks a[href="#home"]');
 homeLink.addEventListener('click', function() {
-  this.href = '/';
+  this.href = 'https://andrelrocha.github.io/weRobot/';
 });
 
 function showNavOnScroll (event) {
