@@ -7,7 +7,40 @@ const menuNotebook = document.querySelectorAll('nav#navigation .menu li a');
 function onScroll () {
   showNavOnScroll();
   showBackToStart();
+
+  activateCurrentSectionMenu(home);
+  activateCurrentSectionMenu(services);
+  activateCurrentSectionMenu(about);
+  activateCurrentSectionMenu(contact);
 }
+
+function activateCurrentSectionMenu(section) {
+  const midLine = (innerHeight/2) + scrollY;
+  const sectionTop = section.offsetTop;
+  const sectionTopPassedMidLine = midLine > sectionTop;
+  
+  const sectionHeight = section.offsetHeight;
+  const sectionEndsAt = sectionHeight + sectionTop;
+  const sectionEndPassedMidLine = sectionEndsAt < midLine;
+
+  const sectionBoundaries = sectionTopPassedMidLine && !sectionEndPassedMidLine;
+  
+  const sectionId = section.getAttribute('id');
+  const menuAnchorsSite = document.querySelectorAll(`.menu a[href*=${sectionId}]`);
+
+  menuAnchorsSite.forEach(menuElement => {
+    menuElement.classList.remove('active');
+    if (menuElement.getAttribute('href') === `#${sectionId}` && sectionBoundaries) {
+        menuElement.classList.add('active');
+    }
+    });
+}
+
+//redireciona o botao home para o início da page sem quebrar o href necessário para activateCurrentSectionMenu
+const homeLink = document.querySelector('.listaLinks a[href="#home"]');
+homeLink.addEventListener('click', function() {
+  this.href = '/';
+});
 
 function showNavOnScroll (event) {
     if (scrollY > 0) {
@@ -38,6 +71,8 @@ function showBackToStart (event) {
 }
 
 window.addEventListener('scroll', onScroll);
+
+
 
 function openMenu (event) {
     document.body.classList.add('menuExpanded');
@@ -79,16 +114,16 @@ const cardsData = [
     }
   ];
 
-  const cardsContainer = document.querySelector('.cards-container');
+const cardsContainer = document.querySelector('.cards-container');
 
-  cardsData.forEach(card => {
-    //cria o texto html passando os objetos como parametro os objetos, em que cada loop adicionara o texto html, puxando cardsData[indexForEach]
-    const cardHtml = `
-        <div class="card">
-        <img src="${image}">
-        <h3>${card.title}</h3>
-        <p>${lorem}</p>
-      </div>`;
-    /*JavaScript code that is used to add content to an existing HTML element. The += operator is used to append the new HTML code to the existing content of the cardsContainer element, rather than overwriting it completely.*/
-    cardsContainer.innerHTML += cardHtml;
-  });
+cardsData.forEach(card => {
+  //cria o texto html passando os objetos como parametro os objetos, em que cada loop adicionara o texto html, puxando cardsData[indexForEach]
+  const cardHtml = `
+      <div class="card">
+      <img src="${image}">
+      <h3>${card.title}</h3>
+      <p>${lorem}</p>
+    </div>`;
+  /*JavaScript code that is used to add content to an existing HTML element. The += operator is used to append the new HTML code to the existing content of the cardsContainer element, rather than overwriting it completely.*/
+  cardsContainer.innerHTML += cardHtml;
+});
