@@ -1,6 +1,8 @@
 #services header h2 {
     margin-bottom: 6rem;
     font-family: var(--fonteTitulo);
+    width: 70%;
+    margin-inline: auto;
 }
 
 #services h3 {
